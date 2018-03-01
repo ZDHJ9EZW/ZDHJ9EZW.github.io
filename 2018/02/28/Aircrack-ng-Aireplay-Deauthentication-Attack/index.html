@@ -7,22 +7,22 @@
   
   <title>Aircrack-ng Aireplay Deauthentication Attack | ZDHJ9EZW bit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="简介Deauth 是通过发送一份伪造的取消认证报文让客户端以为路由器需要让自己断开链接，断开后客户端会尝试重新与路由器握手，这时候就可以进行抓包等操作。常在下列情形中用到：  用来发现隐藏的 ESSID 用来捕捉 WPA/WPA2 握手包 产生 ARP 请求（断开连接时，windows 会刷新 ARP 缓存） 不断发送 DeAuth 会使目标 Wi-Fi 无法连接  当然，没有用户和接入点连接时，">
+  <meta name="description" content="简介Deauth 是通过发送一份伪造的取消认证报文让客户端以为路由器需要让自己断开链接，断开后客户端会尝试重新与路由器握手，这时候就可以进行抓包等操作。常在下列情形中用到：  用来发现隐藏的 ESSID 用来捕捉 WPA/WPA2 握手包 产生 ARP 请求（断开连接时，Windows 会刷新 ARP 缓存） 不断发送 DeAuth 会使目标 Wi-Fi 无法连接  当然，没有用户和接入点连接时，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Aircrack-ng Aireplay Deauthentication Attack">
-<meta property="og:url" content="http://yoursite.com/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/index.html">
+<meta property="og:url" content="http://liuziyang.me/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/index.html">
 <meta property="og:site_name" content="ZDHJ9EZW bit">
-<meta property="og:description" content="简介Deauth 是通过发送一份伪造的取消认证报文让客户端以为路由器需要让自己断开链接，断开后客户端会尝试重新与路由器握手，这时候就可以进行抓包等操作。常在下列情形中用到：  用来发现隐藏的 ESSID 用来捕捉 WPA/WPA2 握手包 产生 ARP 请求（断开连接时，windows 会刷新 ARP 缓存） 不断发送 DeAuth 会使目标 Wi-Fi 无法连接  当然，没有用户和接入点连接时，">
-<meta property="og:image" content="http://yoursite.com/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/1.png">
-<meta property="og:image" content="http://yoursite.com/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/2.png">
-<meta property="og:image" content="http://yoursite.com/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/3.png">
-<meta property="og:image" content="http://yoursite.com/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/4.png">
-<meta property="og:image" content="http://yoursite.com/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/5.png">
-<meta property="og:updated_time" content="2018-03-01T10:22:47.256Z">
+<meta property="og:description" content="简介Deauth 是通过发送一份伪造的取消认证报文让客户端以为路由器需要让自己断开链接，断开后客户端会尝试重新与路由器握手，这时候就可以进行抓包等操作。常在下列情形中用到：  用来发现隐藏的 ESSID 用来捕捉 WPA/WPA2 握手包 产生 ARP 请求（断开连接时，Windows 会刷新 ARP 缓存） 不断发送 DeAuth 会使目标 Wi-Fi 无法连接  当然，没有用户和接入点连接时，">
+<meta property="og:image" content="http://liuziyang.me/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/1.png">
+<meta property="og:image" content="http://liuziyang.me/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/2.png">
+<meta property="og:image" content="http://liuziyang.me/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/3.png">
+<meta property="og:image" content="http://liuziyang.me/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/4.png">
+<meta property="og:image" content="http://liuziyang.me/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/5.png">
+<meta property="og:updated_time" content="2018-03-01T10:25:40.768Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Aircrack-ng Aireplay Deauthentication Attack">
-<meta name="twitter:description" content="简介Deauth 是通过发送一份伪造的取消认证报文让客户端以为路由器需要让自己断开链接，断开后客户端会尝试重新与路由器握手，这时候就可以进行抓包等操作。常在下列情形中用到：  用来发现隐藏的 ESSID 用来捕捉 WPA/WPA2 握手包 产生 ARP 请求（断开连接时，windows 会刷新 ARP 缓存） 不断发送 DeAuth 会使目标 Wi-Fi 无法连接  当然，没有用户和接入点连接时，">
-<meta name="twitter:image" content="http://yoursite.com/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/1.png">
+<meta name="twitter:description" content="简介Deauth 是通过发送一份伪造的取消认证报文让客户端以为路由器需要让自己断开链接，断开后客户端会尝试重新与路由器握手，这时候就可以进行抓包等操作。常在下列情形中用到：  用来发现隐藏的 ESSID 用来捕捉 WPA/WPA2 握手包 产生 ARP 请求（断开连接时，Windows 会刷新 ARP 缓存） 不断发送 DeAuth 会使目标 Wi-Fi 无法连接  当然，没有用户和接入点连接时，">
+<meta name="twitter:image" content="http://liuziyang.me/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/1.png">
   
     <link rel="alternate" href="/atom.xml" title="ZDHJ9EZW bit" type="application/atom+xml">
   
@@ -63,7 +63,7 @@
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://liuziyang.me"></form>
       </div>
     </div>
   </div>
@@ -95,7 +95,7 @@
 <ul>
 <li>用来发现隐藏的 ESSID</li>
 <li>用来捕捉 WPA/WPA2 握手包</li>
-<li>产生 ARP 请求（断开连接时，windows 会刷新 ARP 缓存）</li>
+<li>产生 ARP 请求（断开连接时，Windows 会刷新 ARP 缓存）</li>
 <li>不断发送 DeAuth 会使目标 Wi-Fi 无法连接</li>
 </ul>
 <p>当然，没有用户和接入点连接时，这种攻击方式就不能使用了。</p>
@@ -130,7 +130,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/" data-id="cje8d32j400007guwtf5zmmd4" class="article-share-link">Share</a>
+      <a data-url="http://liuziyang.me/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/" data-id="cje8dayef0001couwbz95jegs" class="article-share-link">Share</a>
       
       
     </footer>
