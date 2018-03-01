@@ -18,7 +18,7 @@
 <meta property="og:image" content="http://liuziyang.me/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/3.png">
 <meta property="og:image" content="http://liuziyang.me/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/4.png">
 <meta property="og:image" content="http://liuziyang.me/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/5.png">
-<meta property="og:updated_time" content="2018-03-01T10:25:40.768Z">
+<meta property="og:updated_time" content="2018-03-01T16:03:44.283Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Aircrack-ng Aireplay Deauthentication Attack">
 <meta name="twitter:description" content="简介Deauth 是通过发送一份伪造的取消认证报文让客户端以为路由器需要让自己断开链接，断开后客户端会尝试重新与路由器握手，这时候就可以进行抓包等操作。常在下列情形中用到：  用来发现隐藏的 ESSID 用来捕捉 WPA/WPA2 握手包 产生 ARP 请求（断开连接时，Windows 会刷新 ARP 缓存） 不断发送 DeAuth 会使目标 Wi-Fi 无法连接  当然，没有用户和接入点连接时，">
@@ -60,7 +60,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://liuziyang.me"></form>
@@ -113,7 +113,7 @@
 <p>上面列出了周围的 Wi-Fi 和它们的详细信息，包括信号强度、加密类型、频道等。</p>
 <p>要记住要攻击 Wi-Fi 的频道号（CH）和 BSSID。</p>
 <p>之后按 Ctrl + C 结束。</p>
-<h2 id="调整网卡监听信道到目标所在信道"><a href="#调整网卡监听信道到目标所在信道" class="headerlink" title="调整网卡监听信道到目标所在信道"></a>调整网卡监听信道到目标所在信道</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">airmon-ng start wlan0 X</span><br></pre></td></tr></table></figure>
+<h2 id="调整网卡监听信道到目标所在信道"><a href="#调整网卡监听信道到目标所在信道" class="headerlink" title="调整网卡监听信道到目标所在信道"></a>调整网卡监听信道到目标所在信道</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">airmon-ng start wlan0mon X</span><br></pre></td></tr></table></figure>
 <p>上面命令中 “X” 为要攻击目标 Wi-Fi 所在的信道。</p>
 <img src="/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/4.png" title="调整网卡监听信道到目标所在信道">
 <p>常见情况下未进行监听信道设置的时候进行攻击会出现 No such BSSID available，这是因为在 aireplay-ng 进行 Deauth 攻击时，只会在 wlan0mon 监听的信道内寻找目标，所以在进行攻击前要将网卡监听信道调整到目标 MAC 所在信道。</p>
@@ -130,7 +130,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://liuziyang.me/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/" data-id="cje8dayef0001couwbz95jegs" class="article-share-link">Share</a>
+      <a data-url="http://liuziyang.me/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/" data-id="cje8p9ybe0000x4uw55ydbxjp" class="article-share-link">Teilen</a>
       
       
     </footer>
@@ -141,7 +141,7 @@
   
   
     <a href="/2018/02/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Älter</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -164,7 +164,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archiv</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li></ul>
     </div>
@@ -174,7 +174,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">letzter Beitrag</h3>
     <div class="widget">
       <ul>
         
