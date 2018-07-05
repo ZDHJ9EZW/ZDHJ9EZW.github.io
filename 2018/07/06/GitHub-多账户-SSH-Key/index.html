@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>GitHub 多账户 SSH Keyy | ZDHJ9EZW bit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="生成并添加第一个 SSH Key在 git bash 中执行1ssh-keygen -t rsa -C &quot;XXXXXX@XXX.com” -f ~/.ssh/github_1_id-rsa 会在~/.ssh / 目录下生成 id_rsa 和 id_rsa.pub 两个文件用文本编辑器打开 id_rsa.pub 里的内容，在 Github 中添加 SSH Key 生成并添加第二个 SSH Key1s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GitHub 多账户 SSH Keyy">
+<meta property="og:url" content="http://liuziyang.me/2018/07/06/GitHub-多账户-SSH-Key/index.html">
+<meta property="og:site_name" content="ZDHJ9EZW bit">
+<meta property="og:description" content="生成并添加第一个 SSH Key在 git bash 中执行1ssh-keygen -t rsa -C &quot;XXXXXX@XXX.com” -f ~/.ssh/github_1_id-rsa 会在~/.ssh / 目录下生成 id_rsa 和 id_rsa.pub 两个文件用文本编辑器打开 id_rsa.pub 里的内容，在 Github 中添加 SSH Key 生成并添加第二个 SSH Key1s">
+<meta property="og:updated_time" content="2018-07-05T16:17:09.322Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GitHub 多账户 SSH Keyy">
+<meta name="twitter:description" content="生成并添加第一个 SSH Key在 git bash 中执行1ssh-keygen -t rsa -C &quot;XXXXXX@XXX.com” -f ~/.ssh/github_1_id-rsa 会在~/.ssh / 目录下生成 id_rsa 和 id_rsa.pub 两个文件用文本编辑器打开 id_rsa.pub 里的内容，在 Github 中添加 SSH Key 生成并添加第二个 SSH Key1s">
+  
+    <link rel="alternate" href="/atom.xml" title="ZDHJ9EZW bit" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">ZDHJ9EZW bit</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://liuziyang.me"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-GitHub-多账户-SSH-Key" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/06/GitHub-多账户-SSH-Key/" class="article-date">
+  <time datetime="2018-07-05T16:08:55.000Z" itemprop="datePublished">2018-07-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      GitHub 多账户 SSH Keyy
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="生成并添加第一个-SSH-Key"><a href="#生成并添加第一个-SSH-Key" class="headerlink" title="生成并添加第一个 SSH Key"></a>生成并添加第一个 SSH Key</h2><p>在 git bash 中执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"XXXXXX@XXX.com” -f ~/.ssh/github_1_id-rsa</span></span><br></pre></td></tr></table></figure></p>
+<p>会在~/.ssh / 目录下生成 id_rsa 和 id_rsa.pub 两个文件<br>用文本编辑器打开 id_rsa.pub 里的内容，在 Github 中添加 SSH Key</p>
+<h2 id="生成并添加第二个-SSH-Key"><a href="#生成并添加第二个-SSH-Key" class="headerlink" title="生成并添加第二个 SSH Key"></a>生成并添加第二个 SSH Key</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"XXXXXX@XXX.com” -f ~/.ssh/github_2_id-rsa</span></span><br></pre></td></tr></table></figure>
+<h2 id="在-ssh-下创建-config-文件"><a href="#在-ssh-下创建-config-文件" class="headerlink" title="在. ssh / 下创建 config 文件"></a>在. ssh / 下创建 config 文件</h2><p>内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile ~/.ssh/id_rsa</span><br><span class="line"> </span><br><span class="line">Host my.github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile ~/.ssh/my</span><br></pre></td></tr></table></figure></p>
+<h2 id="现在就以下种情况给出不同的做法"><a href="#现在就以下种情况给出不同的做法" class="headerlink" title="现在就以下种情况给出不同的做法"></a>现在就以下种情况给出不同的做法</h2><h3 id="本地已经创建或已经-clone-到本地："><a href="#本地已经创建或已经-clone-到本地：" class="headerlink" title="本地已经创建或已经 clone 到本地："></a>本地已经创建或已经 clone 到本地：</h3><p>打开. git/config 文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#更改[remote &quot;origin&quot;]项中的url中的</span><br><span class="line">#my.github.com 对应上面配置的host</span><br><span class="line">[remote &quot;origin&quot;]</span><br><span class="line">	url = git@my.github.com:itmyline/blog.git</span><br></pre></td></tr></table></figure></p>
+<h3 id="clone-仓库时对应配置-host-对应的账户"><a href="#clone-仓库时对应配置-host-对应的账户" class="headerlink" title="clone 仓库时对应配置 host 对应的账户"></a>clone 仓库时对应配置 host 对应的账户</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#my.github.com对应一个账号</span></span><br><span class="line">git <span class="built_in">clone</span> git@my.github.com:username/repo.git</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://liuziyang.me/2018/07/06/GitHub-多账户-SSH-Key/" data-id="cjj8r8q4a00022ou8al5n8rxy" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/05/22/使用腾讯企业邮箱配置-Discourse-邮件发送服务器/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">使用腾讯企业邮箱配置 Discourse  邮件发送服务器</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/07/06/GitHub-多账户-SSH-Key/">GitHub 多账户 SSH Keyy</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/22/使用腾讯企业邮箱配置-Discourse-邮件发送服务器/">使用腾讯企业邮箱配置 Discourse  邮件发送服务器</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/28/Aircrack-ng-Aireplay-Deauthentication-Attack/">Aircrack-ng Aireplay Deauthentication Attack</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/06/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 ZDHJ9EZW<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
