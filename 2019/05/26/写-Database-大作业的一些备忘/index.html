@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>写 Database 大作业的一些备忘 | ZDHJ9EZW bit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="获取当前页面的 URL传入的 URL 为：http://localhost:8080/MiHuoXiTong_war_exploded/test.jsp?name=123 12345678910111213141516String url=request.getScheme()+&quot;://&quot;+ request.getServerName()+request.getRequestURI();Strin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="写 Database 大作业的一些备忘">
+<meta property="og:url" content="http://liuziyang.me/2019/05/26/写-Database-大作业的一些备忘/index.html">
+<meta property="og:site_name" content="ZDHJ9EZW bit">
+<meta property="og:description" content="获取当前页面的 URL传入的 URL 为：http://localhost:8080/MiHuoXiTong_war_exploded/test.jsp?name=123 12345678910111213141516String url=request.getScheme()+&quot;://&quot;+ request.getServerName()+request.getRequestURI();Strin">
+<meta property="og:image" content="http://liuziyang.me/2019/05/26/写-Database-大作业的一些备忘/111.png">
+<meta property="og:updated_time" content="2019-06-10T06:42:27.243Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="写 Database 大作业的一些备忘">
+<meta name="twitter:description" content="获取当前页面的 URL传入的 URL 为：http://localhost:8080/MiHuoXiTong_war_exploded/test.jsp?name=123 12345678910111213141516String url=request.getScheme()+&quot;://&quot;+ request.getServerName()+request.getRequestURI();Strin">
+<meta name="twitter:image" content="http://liuziyang.me/2019/05/26/写-Database-大作业的一些备忘/111.png">
+  
+    <link rel="alternate" href="/atom.xml" title="ZDHJ9EZW bit" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">ZDHJ9EZW bit</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://liuziyang.me"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-写-Database-大作业的一些备忘" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/26/写-Database-大作业的一些备忘/" class="article-date">
+  <time datetime="2019-05-26T13:11:36.000Z" itemprop="datePublished">2019-05-26</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/学校大作业/">学校大作业</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      写 Database 大作业的一些备忘
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="获取当前页面的-URL"><a href="#获取当前页面的-URL" class="headerlink" title="获取当前页面的 URL"></a>获取当前页面的 URL</h3><p>传入的 URL 为：<a href="http://localhost:8080/MiHuoXiTong_war_exploded/test.jsp?name=123" target="_blank" rel="noopener">http://localhost:8080/MiHuoXiTong_war_exploded/test.jsp?name=123</a></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">String url=request.getScheme()+<span class="string">"://"</span>+ request.getServerName()+request.getRequestURI();</span><br><span class="line">String url=request.getScheme()+<span class="string">"://"</span>+ request.getServerName()+request.getRequestURI();</span><br><span class="line">String path = request.getContextPath();</span><br><span class="line">String basePath = request.getScheme()+<span class="string">"://"</span>+request.getServerName()+<span class="string">":"</span>+request.getServerPort()+path+<span class="string">"/"</span>;</span><br><span class="line">String name = request.getParameter(<span class="string">"name"</span>);<span class="comment">//用request得到</span></span><br><span class="line">String URI = request.getRequestURI();</span><br><span class="line">String Pa = request.getQueryString(); <span class="comment">//得到参数</span></span><br><span class="line">String aa =URI.substring(URI.lastIndexOf(<span class="string">"/"</span>)+<span class="number">1</span>);</span><br><span class="line">    </span><br><span class="line">System.out.println(url);</span><br><span class="line">System.out.println(path);</span><br><span class="line">System.out.println(basePath);</span><br><span class="line">System.out.println(name);</span><br><span class="line">System.out.println(URI);</span><br><span class="line">System.out.println(Pa);</span><br><span class="line">System.out.println(aa);</span><br></pre></td></tr></table></figure>
+<p>输出：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">http://localhost/MiHuoXiTong_war_exploded/test.jsp</span><br><span class="line">/MiHuoXiTong_war_exploded</span><br><span class="line">http://localhost:8080/MiHuoXiTong_war_exploded/</span><br><span class="line">123</span><br><span class="line">/MiHuoXiTong_war_exploded/test.jsp</span><br><span class="line">name=123</span><br><span class="line">test.jsp</span><br></pre></td></tr></table></figure>
+<h3 id="js-刷新当前页面"><a href="#js-刷新当前页面" class="headerlink" title="js 刷新当前页面"></a>js 刷新当前页面</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">location.reload();</span><br></pre></td></tr></table></figure>
+<h3 id="js-后退上一页"><a href="#js-后退上一页" class="headerlink" title="js 后退上一页"></a>js 后退上一页</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">history.go(<span class="number">-1</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="把-String-转为-ing"><a href="#把-String-转为-ing" class="headerlink" title="把 String 转为 ing"></a>把 String 转为 ing</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String itemIdS = request.getParameter(<span class="string">"ID"</span>);</span><br><span class="line"><span class="keyword">int</span> itemId = Integer.parseInt(itemIdS);</span><br></pre></td></tr></table></figure>
+<h3 id="判断-String-是否为数字"><a href="#判断-String-是否为数字" class="headerlink" title="判断 String 是否为数字"></a>判断 String 是否为数字</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isNumeric</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line">    Pattern pattern = Pattern.compile(<span class="string">"[0-9]*"</span>);</span><br><span class="line">    <span class="keyword">return</span> pattern.matcher(str).matches();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="js-2000-毫秒后刷新页面"><a href="#js-2000-毫秒后刷新页面" class="headerlink" title="js 2000 毫秒后刷新页面"></a>js 2000 毫秒后刷新页面</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;  <span class="comment">//使用  setTimeout（）方法设定定时2000毫秒</span></span><br><span class="line">    <span class="built_in">window</span>.location.reload();<span class="comment">//页面刷新</span></span><br><span class="line">&#125;,<span class="number">2000</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="js-post"><a href="#js-post" class="headerlink" title="js post"></a>js post</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">    $.post(<span class="string">"addItemAction.jsp"</span>,</span><br><span class="line">    &#123;</span><br><span class="line">        item_id: $(<span class="string">"#item_id"</span>).val(),</span><br><span class="line">        item_name: $(<span class="string">"#item_name"</span>).val(),</span><br><span class="line">        price: $(<span class="string">"#price"</span>).val(),</span><br><span class="line">        category: $(<span class="string">"#category"</span>).val(),</span><br><span class="line">        description: $(<span class="string">"#description"</span>).val(),</span><br><span class="line">     &#125;);</span><br><span class="line">    </span><br><span class="line"><span class="comment">//再 addItemAction.jsp 接受</span></span><br><span class="line"><span class="built_in">String</span> itemIdS = request.getParameter(<span class="string">"item_id"</span>);</span><br><span class="line">...</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<h3 id="JSP-使用-URL-传递两个参数"><a href="#JSP-使用-URL-传递两个参数" class="headerlink" title="JSP 使用 URL 传递两个参数"></a>JSP 使用 URL 传递两个参数</h3><p>多个参数使用 <code>&amp;</code> 链接</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href="wad_del.jsp?p1=&lt;%=你的变量值%&gt;&amp;p2=&lt;%=你的变量值%&gt;" &gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="js弹出消息对话框-alert-的几种方式"><a href="#js弹出消息对话框-alert-的几种方式" class="headerlink" title="js弹出消息对话框(alert)的几种方式"></a>js弹出消息对话框(alert)的几种方式</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">    <span class="comment">//直接弹出，无取消按钮    </span></span><br><span class="line">   	alert(<span class="string">"alert"</span>);</span><br><span class="line">    <span class="comment">//有取消按钮</span></span><br><span class="line">   	confirm(<span class="string">"Confirm"</span>);</span><br><span class="line">    <span class="comment">//弹出输入框</span></span><br><span class="line">   	prompt(<span class="string">"prompt"</span>);</span><br><span class="line">    <span class="comment">//未知</span></span><br><span class="line">   	<span class="built_in">document</span>.write(<span class="string">"document.write"</span>);</span><br><span class="line">    <span class="comment">//写入控制台</span></span><br><span class="line">   	<span class="built_in">console</span>.log(<span class="string">"console.log"</span>); </span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="js-调用后端方法？"><a href="#js-调用后端方法？" class="headerlink" title="js 调用后端方法？"></a>js 调用后端方法？</h3><p>？？忘记对不对了</p>
+<img src="/2019/05/26/写-Database-大作业的一些备忘/111.png" title="This is an example image">
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://liuziyang.me/2019/05/26/写-Database-大作业的一些备忘/" data-id="ck7bmwj030009eovv6h7qpoe1" class="article-share-link">Teilen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/05/29/在-Word-中插入高亮带行号的代码/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          在 Word 中插入高亮带行号的代码
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/05/24/Java-Web-UI-框架/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">Java Web UI  框架</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Kategorien</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学校大作业/">学校大作业</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/瞎折腾/">瞎折腾</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Chrome/">Chrome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/树莓派/">树莓派</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Chrome/" style="font-size: 10px;">Chrome</a> <a href="/tags/树莓派/" style="font-size: 10px;">树莓派</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/06/">June 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">July 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/06/11/Chrome-关闭密码生成和开启标签页静音/">Chrome 关闭密码生成和开启标签页静音</a>
+          </li>
+        
+          <li>
+            <a href="/2019/06/08/树莓派打印服务器（Samsung-M2626）/">树莓派打印服务器（Samsung M2626）</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/29/在-Word-中插入高亮带行号的代码/">在 Word 中插入高亮带行号的代码</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/26/写-Database-大作业的一些备忘/">写 Database 大作业的一些备忘</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/24/Java-Web-UI-框架/">Java Web UI  框架</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 ZDHJ9EZW<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
